@@ -31,11 +31,13 @@
     
 - **엔진 고도화:** Solr에서 Elasticsearch로 검색 엔진 전환 및 인덱스 설계 주도.
     
-- **PostgreSQL 기반 데이터 파이프라인:**
+- **검색 서비스 데이터 파이프라인:**
     
     - PostgreSQL에서 데이터 1차 정제 및 무결성 검증.
         
-    - **Batch Processor를 통한 비정규화(Denormalization):** 검색 성능 극대화를 위해 분산된 데이터를 단일 문서 모델로 변환하여 ES 인덱싱 수행.
+    - **Batch Processor를 통한 비정규화(Denormalization):** 검색 성능 극대화를 위해 최적의 Document 구조 설계 및 데이터를 단일 문서 모델로 변환하여 ES 인덱싱 수행.
+ 
+    - Query DSL 최적화를 통하여 성능 요구사항 및 품질 요구 사항 만족
         
 - **성과:** 대규모 트래픽 하에서도 검색 응답 속도 최적화 및 데이터 정합성 유지.
     
