@@ -8,8 +8,7 @@
 
 ## About Me
 
-저는 삼성전자 VD사업부 서비스SW Lab 소속으로 약 9년간 Smart TV 환경에서  
-콘텐츠 검색 서비스 서버 개발과 검색 품질 고도화를 담당해 왔습니다.
+저는 삼성전자에서 3년간 TV내 미들웨어 개발을 진행하며 디바이스 개발에 대한 경험을 쌓았고 약 9년간 Smart TV 환경에서 콘텐츠 검색 서비스 서버 개발과 검색 품질 고도화를 담당해 왔습니다.
 
 검색 시스템을 단순한 기능이 아닌 **사용자 경험을 결정하는 핵심 인터페이스**로 바라보며,  
 기술 도입 자체보다 “왜 필요한가, 실제 서비스에 어떻게 안착시킬 것인가”를 중요하게 생각합니다.
@@ -43,8 +42,12 @@
 ## Career
 
 ### Samsung Electronics  
-**VD사업부 서비스SW Lab | Search Backend Engineer**  
-2013 – Present
+**Tizen middleware Engineer**
+2013 - 2015
+- Smart TV내 외부 파트너사의 콘텐츠 추천 제공을 위한 플랫폼 설계 및 개발
+- 
+**Search Backend Engineer**  
+2016 – Present
 
 - Smart TV 콘텐츠 검색 서비스 서버 개발
 - 글로벌 TV 플랫폼 검색 인프라 설계·운영
