@@ -27,7 +27,7 @@
 
 #### 검색 엔진 인프라 및 데이터 파이프라인 (Data & Infra)
 
-- **AWS EKS 기반 MSA 전환:** Java 기반의 Monolitic 레거시 서버를 EKS 기반의 MSA로 전환하여 서비스 가용성과 배포 유연성 확보.
+- **AWS EKS 기반 MSA 전환:** Java 기반의 Monolitic 레거시 서버를 node.js 기반의 MSA로 전환하여 서비스 가용성과 배포 유연성 확보.(AWS EKS)
     
 - **엔진 고도화:** Solr에서 Elasticsearch로 검색 엔진 전환 및 인덱스 설계 주도.
     
@@ -44,7 +44,7 @@
 
 #### 검색 품질 고도화 (Search Quality)
 
-- **Progressive 검색:** Tokenizing, Stemmer 커스터마이징을 통해 한국어/영어 및 EU 주요 언어 검색 품질 개선.
+- **Progressive 검색:** TV 리모콘 입력의 특징에 기반한 Tokenizing, Stemmer 커스터마이징을 통해 한국어/영어 및 EU 주요 언어 검색 품질 개선.
     
 - **Trending 추천:** 검색 KPI 데이터를 기반으로 **TF-IDF 알고리즘을 응용**한 실시간 트렌딩 콘텐츠 로직 구현.
     
