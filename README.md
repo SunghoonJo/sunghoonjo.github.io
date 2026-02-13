@@ -1,5 +1,4 @@
-# Sunghoon Jo  
-**Search Backend / AI Search Engineer**
+**Backend Engineer / Search Engineer**
 
 대규모 상용 서비스 환경에서 검색 시스템을 설계·운영하며,  
 **사용자 경험의 변화를 기술로 선제적으로 반영하는 검색 엔지니어**입니다.
