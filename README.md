@@ -18,8 +18,7 @@
 ## Core Skills
 
 ### Search / Data
-- Elasticsearch, Solr, Lucene
-- OpenSearch 구조 이해 및 인덱스 설계
+- Elasticsearch, Solr등 lucene 기반 Indexer 구조 이해 및 인덱스 설계
 - 대규모 데이터 파이프라인 / 인덱싱 최적화
 
 ### AI / ML
@@ -76,23 +75,24 @@ Smart TV 플랫폼에서 다양한 콘텐츠를 안정적으로 검색·제공�
 - 검색 인덱스 구조 및 필드 설계 주도
 - 초기 검색 파이프라인 아키텍처 정의
 - 운영 환경 인덱싱 이슈 대응
+- Tokenizing, Stemmer 등 검색 솔루션 도입
 
 ---
 
 ## 2. 검색 품질 개선 및 추천 고도화 (2019–2021)
 
 ### Background
-콘텐츠 수 증가로 인해 단순 키워드 매칭만으로는 사용자가 기대하는 검색 품질을 유지하기 어려운 단계에 도달했습니다.
+Precision 기반의 키워드 매칭만으로는 사용자가 기대하는 검색 품질을 유지하기 어려운 단계에 도달했습니다.
 
 ### Work
-- Elasticsearch 기반 검색 인덱스 전환 및 최적화
+- Elasticsearch 기반 검색 인덱스 전환 및 최적화 (KNN 활용 용도 및 Top tire open source 사용)
 - 검색 KPI 기반 품질 분석 체계 구축
-- TF-IDF를 응용한 Trending 콘텐츠 추천 로직 설계
-- Tokenizing, Stemmer 등 검색 솔루션 도입
+- TF-IDF를 응용한 검색 KPI 기반 Trending 콘텐츠 추천 로직 설계
+
 
 ### Result
 - 인기 콘텐츠 노출 정확도 향상
-- 검색 결과 일관성 개선
+- 검색 재현율 향상으로 CTR 10% 상승
 - 검색 품질 지표 안정화
 
 ---
