@@ -184,8 +184,8 @@ Bixby 음성 검색 도입으로 사용자 발화에서 의미 단위(Entity)를
 
 ### Work
 
-- PM 조직과 협업해 **사용자 탐색 흐름을 재정의**하고, AI Agent를 도입하기로 결정
-- **검색 서버팀 리더**로서 기술 구조와 협업 방향 주도
+- PM 조직과 협업해 사용자 Discovery 경험을재정의하고 AI Agent를 도입하기로 결정
+- 검색 서버팀 리더로서 기술 구조와 협업 방향 주도
 - LLM의 특성과 제약을 검색 도메인 관점에서 검토
 - Node.js 및 Elasticsearch 기반 RAG 구조를 설계하여 검색 결과를 근거로 응답 생성
 - 기존 TV 앱의 결과 전달 구조를 개선해 Agent 응답 스트리밍 방식 설계
@@ -202,10 +202,6 @@ Bixby 음성 검색 도입으로 사용자 발화에서 의미 단위(Entity)를
 - 기술 구조 설계 및 도입 전략 주도
 - 팀 내외부 이해관계자와 협업 조율
 - 스트리밍/병렬 처리 아키텍처 설계 및 실현
-
-### Tech
-
-Node.js · Elasticsearch · RAG · LLM · Streaming Response · Parallel Orchestration
 
 ---
 
