@@ -14,7 +14,7 @@
     
     - Smart TV 홈 화면(First Screen)에 노출될 추천 콘텐츠를 위해 다수의 외부 CP(Content Provider)와 TV 시스템 간의 주기적 데이터 동기화 구현.
 
-    - 외부 파트너사 제공용 **Web API Spec 설계** 및 표준화 주도.
+    - 외부 파트너사 제공용 **Tizen Web API Spec 설계** 및 표준화 주도.
         
     - 대량의 콘텐츠 메타데이터를 안정적으로 수집하고 저장하기 위한 주기적 배치/데몬 로직 최적화.
     
@@ -25,7 +25,7 @@
 
 **[검색 엔진 고도화 및 Cloud 인프라 운영]** Smart TV의 핵심 기능인 통합 검색 서비스의 백엔드 아키텍처를 설계하고 지속적으로 고도화해 오고 있습니다.
 
-#### ① 검색 엔진 인프라 및 데이터 파이프라인 (Data & Infra)
+#### 검색 엔진 인프라 및 데이터 파이프라인 (Data & Infra)
 
 - **AWS EKS 기반 MSA 전환:** Java 기반의 Monolitic 레거시 서버를 EKS 기반의 MSA로 전환하여 서비스 가용성과 배포 유연성 확보.
     
@@ -42,7 +42,7 @@
 - **성과:** 대규모 트래픽 하에서도 검색 응답 속도 최적화 및 데이터 정합성 유지.
     
 
-#### ② 검색 품질 고도화 (Search Quality)
+#### 검색 품질 고도화 (Search Quality)
 
 - **Progressive 검색:** Tokenizing, Stemmer 커스터마이징을 통해 한국어/영어 및 EU 주요 언어 검색 품질 개선.
     
@@ -51,7 +51,7 @@
 - **Bixby 음성 검색:** 사용자 발화 의도를 분석하기 위한 **ML 기반 NER(Named Entity Recognition)** 도입 (제목, 장르, 배우 등 개체명 구분).
     
 
-#### ③ AI & LLM 서비스 혁신 (AI Agent & Semantic Search)
+#### AI & LLM 서비스 혁신 (AI Agent & Semantic Search)
 
 - **Semantic Search 설계:** 키워드를 넘어선 의도 파악을 위해 **Vector 기반 의미 검색** 기능 개발.
     
