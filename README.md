@@ -33,6 +33,9 @@
 - 대규모 트래픽 환경의 검색 안정화
 - 검색 KPI 기반 품질 모니터링
 
+### Language
+- C++, C#, Javascript, Python
+
 ---
 
 ## Career
