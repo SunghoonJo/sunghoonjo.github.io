@@ -1,77 +1,172 @@
-# [PORTFOLIO] 검색 & AI 서비스 아키텍트
+# Sunghoon Jo  
+**Search Backend / AI Search Engineer**
 
-> **"10년의 데이터 검색 엔지니어링 경험을 바탕으로, 검색의 본질과 AI의 미래를 연결합니다."**
-
-## 📂 업무 이력 요약
-
-### 1. 콘텐츠 통합 및 데이터 수집 데몬 개발 (2013 ~ 2015)
-
-**[Smart TV First Screen 지원용 백엔드 구축]**
-
-- **역할:** 파트너사(CP) 데이터 수집/저장 데몬 프로세서 설계 및 개발
-    
-- **주요 성과:**
-    
-    - Smart TV 홈 화면(First Screen)에 노출될 추천 콘텐츠를 위해 다수의 외부 CP(Content Provider)와 TV 시스템 간의 주기적 데이터 동기화 구현.
-
-    - 외부 파트너사 제공용 **Tizen Web API Spec 설계** 및 표준화 주도.
-        
-    - 대량의 콘텐츠 메타데이터를 안정적으로 수집하고 저장하기 위한 주기적 배치/데몬 로직 최적화.
-    
+대규모 상용 서비스 환경에서 검색 시스템을 설계·운영하며,  
+**사용자 경험의 변화를 기술로 선제적으로 반영하는 검색 엔지니어**입니다.
 
 ---
 
-### 2. Smart TV 통합 검색 서비스 서버 개발 (2016 ~ 현재)
+## About Me
 
-**[검색 엔진 고도화 및 Cloud 인프라 운영]** Smart TV의 핵심 기능인 통합 검색 서비스의 백엔드 아키텍처를 설계하고 지속적으로 고도화해 오고 있습니다.
+저는 삼성전자 VD사업부 서비스SW Lab 소속으로 약 9년간 Smart TV 환경에서  
+콘텐츠 검색 서비스 서버 개발과 검색 품질 고도화를 담당해 왔습니다.
 
-#### 검색 엔진 인프라 및 데이터 파이프라인 (Data & Infra)
+검색 시스템을 단순한 기능이 아닌 **사용자 경험을 결정하는 핵심 인터페이스**로 바라보며,  
+기술 도입 자체보다 “왜 필요한가, 실제 서비스에 어떻게 안착시킬 것인가”를 중요하게 생각합니다.
 
-- **AWS EKS 기반 MSA 전환:** Java 기반의 Monolitic 레거시 서버를 node.js 기반의 MSA로 전환하여 서비스 가용성과 배포 유연성 확보.(AWS EKS)
-    
-- **엔진 고도화:** Solr에서 Elasticsearch로 검색 엔진 전환 및 인덱스 설계 주도.
-    
-- **검색 서비스 데이터 파이프라인:**
-    
-    - PostgreSQL에서 데이터 1차 정제 및 무결성 검증.
-        
-    - **Batch Processor를 통한 비정규화(Denormalization):** 검색 성능 극대화를 위해 최적의 Document 구조 설계 및 데이터를 단일 문서 모델로 변환하여 ES 인덱싱 수행.
- 
-    - Query DSL 최적화를 통하여 성능 요구사항 및 품질 요구 사항 만족
-        
-- **성과:** 대규모 트래픽 하에서도 검색 응답 속도 최적화 및 데이터 정합성 유지.
-    
-
-#### 검색 품질 고도화 (Search Quality)
-
-- **Progressive 검색:** TV 리모콘 입력의 특징에 기반한 Tokenizing, Stemmer 커스터마이징을 통해 한국어/영어 및 EU 주요 언어 검색 품질 개선.
-    
-- **Trending 추천:** 검색 KPI 데이터를 기반으로 **TF-IDF 알고리즘을 응용**한 실시간 트렌딩 콘텐츠 로직 구현.
-    
-- **Bixby 음성 검색:** 사용자 발화 의도를 분석하기 위한 **ML 기반 NER(Named Entity Recognition)** 도입 (제목, 장르, 배우 등 개체명 구분).
-    
-
-#### AI & LLM 서비스 혁신 (AI Agent & Semantic Search)
-
-- **Semantic Search 설계:** 키워드를 넘어선 의도 파악을 위해 **Vector 기반 의미 검색** 기능 개발.
-    
-- **Re-rank 알고리즘 (특허 출원):** Vector 검색 결과의 정밀도를 높이기 위해 검색 품질을 재정렬하는 알고리즘을 독자적으로 설계하고 **특허 출원**.
-    
-- **LLM 활용 메타데이터 증강:** 부족한 콘텐츠 정보를 LLM으로 생성/보충하여 검색 가능 범위(Coverage) 대폭 확대.
-    
-- **AI Agent 구현:** **RAG(검색 증강 생성)** 기술을 접목하여 단순 결과 나열이 아닌, 사용자의 질문에 직접 해답을 제공하는 콘텐츠 추천 에이전트 구축.
-    
+최근에는 LLM과 Vector 기반 검색 기술을 실험적 적용에 그치지 않고,  
+**법무·운영·성능 제약을 고려한 상용 검색 구조로 설계·확장**하는 데 집중하고 있습니다.
 
 ---
 
-## 🛠 주요 기술 스택 (Tech Stack)
+## Core Skills
 
-- **Languages:** Node.js, Python, C#
-    
-- **Search/AI:** Elasticsearch, Solr, Vector Search, RAG, ML-based NER
-    
-- **Database:** **PostgreSQL**, Redis, DynamoDB
-    
-- **Cloud/Infra:** **AWS EKS**, Docker, CI/CD(Jenkins), Batch Processing
+### Search / Data
+- Elasticsearch, Solr, Lucene
+- OpenSearch 구조 이해 및 인덱스 설계
+- 대규모 데이터 파이프라인 / 인덱싱 최적화
+
+### AI / ML
+- Semantic Search, Vector Embedding
+- LLM 기반 메타데이터 증강
+- NER / Classification
+- RAG 기반 검색·추천 구조
+
+### Infra / Operation
+- Docker, Kubernetes
+- Batch Processing Pipeline
+- 대규모 트래픽 환경의 검색 안정화
+- 검색 KPI 기반 품질 모니터링
+
+---
+
+## Career
+
+### Samsung Electronics  
+**VD사업부 서비스SW Lab | Search Backend Engineer**  
+2013 – Present
+
+- Smart TV 콘텐츠 검색 서비스 서버 개발
+- 글로벌 TV 플랫폼 검색 인프라 설계·운영
+- 음성/텍스트 검색 품질 개선 및 AI 검색 도입
+
+---
+
+## Featured Projects  
+## Smart TV Search Evolution  
+**Keyword Search → Semantic Search → LLM-based Search (2016–2024)**
+
+Smart TV 검색 서비스는 사용자 입력 방식과 기대 수준의 변화에 따라  
+**단계적으로 진화해 온 검색 시스템**입니다.  
+저는 이 검색 서비스의 초기 구조 설계부터 AI 기반 고도화까지 전 과정을 경험했습니다.
+
+---
+
+## 1. 검색 서비스 초기 구축 및 인프라 설계 (2016–2018)
+
+### Background
+Smart TV 플랫폼에서 다양한 콘텐츠를 안정적으로 검색·제공하기 위해  
+확장 가능하고 운영 가능한 검색 인프라가 필요했습니다.
+
+### Work
+- Lucene 기반 Solr Indexer 구성
+- 콘텐츠 메타데이터 수집·정제·인덱싱 파이프라인 설계
+- 파트너 데이터 유입을 고려한 검색 스키마 설계
+- 대규모 콘텐츠 업데이트 환경에서의 인덱싱 안정성 확보
+
+### Contribution
+- 검색 인덱스 구조 및 필드 설계 주도
+- 초기 검색 파이프라인 아키텍처 정의
+- 운영 환경 인덱싱 이슈 대응
+
+---
+
+## 2. 검색 품질 개선 및 추천 고도화 (2019–2021)
+
+### Background
+콘텐츠 수 증가로 인해 단순 키워드 매칭만으로는  
+사용자가 기대하는 검색 품질을 유지하기 어려운 단계에 도달했습니다.
+
+### Work
+- Elasticsearch 기반 검색 인덱스 전환 및 최적화
+- 검색 KPI 기반 품질 분석 체계 구축
+- TF-IDF를 응용한 Trending 콘텐츠 추천 로직 설계
+- Tokenizing, Stemmer 등 검색 솔루션 도입
+
+### Result
+- 인기 콘텐츠 노출 정확도 향상
+- 검색 결과 일관성 개선
+- 검색 품질 지표 안정화
+
+---
+
+## 3. 음성 검색 및 NER 기반 질의 이해 고도화 (2021–2023)
+
+### Background
+Bixby 음성 검색 도입으로  
+사용자 발화에서 의미 단위(Entity)를 정확히 분리하는 것이 핵심 과제가 되었습니다.
+
+### Work
+- ML 기반 classification을 활용한 NER 구조 설계
+- 제목, 장르, 배우 등 엔티티 단위 분류
+- 음성 발화 특성을 고려한 질의 전처리 개선
+
+### Result
+- 음성 검색 오탐 감소
+- 엔티티 기반 검색 정확도 향상
+
+---
+
+## 4. LLM 기반 메타데이터 증강 및 Semantic Search 고도화 (2024)
+
+### Background
+기존에는 단문 발화가 주를 이루었지만,  
+사용자는 점차 자연어에 가까운 표현으로 검색 의도를 전달하기 시작했습니다.
+
+기존 키워드·엔티티 중심 검색만으로는  
+이러한 변화에 대응하기 어렵다고 판단했습니다.
+
+---
+
+### Challenge
+- 콘텐츠 메타데이터의 의미 정보 한계
+- 메타데이터 제공 업체의 AI 활용 거부
+- 법무 이슈 없이 의미 확장이 가능한 구조 필요
+
+---
+
+### Approach
+- LLM을 활용한 콘텐츠 메타데이터 의미 증강
+- 외부 오픈데이터 기반 간접 매칭 구조 설계로 법무 리스크 회피
+- Batch 기반 프로세서로 증강 파이프라인 구성
+- Vector embedding 기반 semantic search 구축
+- 키워드 검색과 의미 검색 병렬 처리 후 re-rank 적용
+
+---
+
+### Result
+- 확장·비정형 발화에서 검색 실패 비율 감소
+- 검색 KPI 기준 의미 있는 품질 개선
+- 대규모 상용 TV 서비스 환경에서 안정적 운영
+- 검색 품질 고도화 기술로 특허 출원
+
+---
+
+### Contribution
+- 프로젝트 문제 정의 및 기술 방향 설정
+- 데이터 전략 및 법무 이슈 회피 구조 설계
+- Batch 기반 메타데이터 증강 파이프라인 구현
+- Semantic search 및 re-rank 구조 설계 주도
+
+---
+
+## Summary
+
+본 프로젝트들은 서로 독립적인 시도가 아니라,  
+검색 시스템이 사용자 경험 변화에 맞춰 진화해 온 연속적인 과정입니다.
+
+저는 키워드 검색 인프라 구축부터  
+AI·LLM 기반 검색 고도화까지  
+검색 서비스의 전체 생애주기를 직접 설계·운영해 왔습니다.
 
 ---
